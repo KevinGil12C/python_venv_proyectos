@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Descarga Youtube</title>
+    <script type="text/javascript" src="/eel.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body style="background-image: url(image/fondo.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+    <div>
+        <div class="titulo">
+            <h1>Descarga Youtube</h1>
+        </div>
+        <div class="pideDatos">
+            <h3>URL:</h3>
+            <input type="text" id="url" placeholder="Ingrese el url del YotuTube">
+            <br>
+            <br>
+            <img src="image/youtube.jpg" width="220" height="170">
+        </div>
+        <div class="botones">
+            <br>
+            <br>
+            <input type="submit" class="btn btn-primary btn-block" value="Download MP3" onclick="DescargaMP3()"  name="">
+            <br>
+            <br>
+            <input type="submit" class="btn btn-primary btn-block" value="Download MP4" onclick="DescargaMP4()"  name="">
+            <br>
+            <br>
+            <h3 id="demo"></h3>
+        </div>
+    </div>
+    <script>
+        function DescargaMP3(){
+            document.getElementById('demo').innerHTML = 'Descargando...';
+            let url = document.getElementById('url').value
+            eel.DescargaMP3(url)(callback3);
+        }
+        function callback3(mensaje){
+            if(mensaje="Descargado"){
+                document.getElementsByTagName("input")[0].value = "";
+                document.getElementById('demo').innerHTML = '';
+            }   
+        }
+        function DescargaMP4(){
+            document.getElementById('demo').innerHTML = 'Descargando...';
+            let url = document.getElementById('url').value
+            eel.DescargaMP4(url)(callback4);
+        }
+
+        function callback4(mensaje){
+            if(mensaje="Descargado"){
+                document.getElementsByTagName("input")[0].value = "";
+                document.getElementById('demo').innerHTML = '';
+            } 
+        }
+    </script>
+</body>
+
+</html>
