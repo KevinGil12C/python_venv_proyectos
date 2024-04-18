@@ -1,24 +1,25 @@
-## Descarga Música & Videos con python (Yotube)
+## Descarga de Música y Videos de YouTube con Python
 
-El protecto esta creado para descargar música y videos de YouTube, utilzando python y la libreria eel para la interfaz de descarga. 
+Este proyecto te permite descargar música y videos de YouTube utilizando Python y la biblioteca Eel para la interfaz de usuario.
+
 
  
 ## Comienzo 🚀
 
-Este repositorio contiene un ambiente virtual para no instalar las librerias utilizadas.
+Este repositorio contiene un entorno virtual para evitar instalar las librerías necesarias directamente en tu sistema.
 
-Clonar el repositorio o descargar desde https://github.com/KevinGil12C/python_venv_proyectos.git
+Clona el repositorio o descárgalo desde <a href="https://github.com/KevinGil12C/python_venv_proyectos">aquí.</a>
 
-- Abrir el entorno virtual .\musica\Scripts\activate
+Activa el entorno virtual ejecutando el siguiente comando en tu terminal:
 
 ![alt text](image.png)
 
-- Movernos al directorio Descarga 2 y ejecutar py main.py
+Navega hasta el directorio "Descarga 2" y ejecuta el archivo main.py con Python:
 
 ![alt text](image-1.png)
 
 
-- Ingresar la url del video a descargar asi como elegir el formato a descargar
+Ingresa la URL del video que deseas descargar y elige el formato de descarga.
 
 ![alt text](image-2.png)
 
